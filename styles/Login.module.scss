@@ -1,0 +1,38 @@
+.loginBaseContainer {
+    margin: 20% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        font-size: 6em;
+        font-family: 'Pacifico', cursive !important;
+        color: #00796b  !important;
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+    .registerLink {
+        text-decoration: none;
+        margin-top: 10px;
+    }
+}
+
+.loginForm {
+    margin: 10px;
+}
+
+.loginButton {
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+    background-color: #00796b  !important;
+    color: #fff  !important;
+}
+
+.loginImage {
+    height: 50%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: -1;
+}

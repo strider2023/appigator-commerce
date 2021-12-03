@@ -1,0 +1,69 @@
+.websiteHeaderContainer {
+    background-color: white !important;
+
+    h6 {
+        color: #a14235;
+        flex-grow: 1;
+        font-family: "Pacifico", cursive !important;
+        font-size: 1.5em !important;
+        cursor: pointer;
+    }
+
+    .navLink {
+        text-decoration: none !important;
+    }
+}
+
+.drawerList {
+    width: 240px;
+}
+
+.headerLogo {
+    width: 24px;
+    margin-right: 10px;
+}
+
+.headerDrawerContainer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 320px;
+    background-color: #ef705d;
+    color: #fff;
+    text-align: center;
+
+    .headerDrawerProfileAvatar {
+        height: 64px !important;
+        width: 64px !important;
+        margin: 0 auto;
+        background: #a14235;
+    }
+
+    .headerDrawerProfileName {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 5px;
+        font-weight: 200 !important;
+    }
+
+    .headerDrawerLoginBtn {
+        color: #a14235;
+        margin-top: 20px;
+    }
+}
+
+.headerDrawerBrandingContainer {
+
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+
+    h1 {
+        color: #a14235;
+        flex-grow: 1;
+        font-family: "Pacifico", cursive !important;
+    }
+}
