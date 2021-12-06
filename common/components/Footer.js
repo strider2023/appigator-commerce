@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
-import { LanguageContext } from '../../common/providers/LanguageContext';
+import Link from 'next/link';
+import { LanguageContext } from '../providers/LanguageContext';
 import { Button, Grid, Typography } from '@material-ui/core';
+import { navItems } from '../../constants/NavItems.constants';
 
 import styles from './styles/Footer.module.scss'
 
@@ -15,7 +17,18 @@ function Footer() {
                 </Typography>
             </div>
             <Grid container className={styles.footerLinksHolder}>
-                <Grid item xs={12} sm={6}>
+                {
+                    navItems.map((obj, i) => (
+                        <Grid item xs={12} sm={6} key={i}>
+                            <Link href={obj.path} variant="body2">
+                                <Button fullWidth>
+                                    {obj.name}
+                                </Button>
+                            </Link>
+                        </Grid>
+                    ))
+                }
+                {/* <Grid item xs={12} sm={6}>
                     <Button fullWidth>Policy</Button>
                 </Grid>
                 <Grid item xs={12} sm={6}>
@@ -26,7 +39,7 @@ function Footer() {
                 </Grid>
                 <Grid item xs={12} sm={6}>
                     <Button fullWidth>Contact Us</Button>
-                </Grid>
+                </Grid> */}
             </Grid>
             <Typography variant="body2" color="textSecondary" align="center" className={styles.footerTextHolder}>
                 {language.copyright_footer}

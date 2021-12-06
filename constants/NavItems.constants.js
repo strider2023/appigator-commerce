@@ -1,12 +1,27 @@
+import ForumIcon from '@material-ui/icons/Forum';
+import LocalMallIcon from '@material-ui/icons/LocalMall';
+import ApartmentIcon from '@material-ui/icons/Apartment';
+import BookIcon from '@material-ui/icons/Book';
+
 export const navItems = [
     {
-        name: 'Suppliers',
-        path: '/suppliers',
-        icon: 'supervised_user_circle'
+        name: 'Home',
+        path: '/',
+        icon: <LocalMallIcon />
     },
     {
-        name: 'Products',
-        path: '/products',
-        icon: 'shopping_basket'
+        name: 'About Us',
+        path: '/about',
+        icon: <ApartmentIcon />
+    },
+    {
+        name: 'Contact Us',
+        path: '/contact',
+        icon: <ForumIcon />
+    },
+    {
+        name: 'Policy',
+        path: '/policy',
+        icon: <BookIcon />
     }
 ];

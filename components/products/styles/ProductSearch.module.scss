@@ -1,0 +1,34 @@
+.searchInputContainer {
+    margin-left: auto;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+.filterButton {
+    color: white;
+}
+
+.suggestionsList {
+    min-width: 480px;
+
+    .suggestionsListItem {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .searchInputContainer {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+
+        .searchInput {
+            flex-grow: 1;
+        }
+    }
+
+    .suggestionsList {
+        min-width: 100%;
+    }
+}
