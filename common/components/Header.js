@@ -8,6 +8,7 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import PersonIcon from '@material-ui/icons/Person';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import { navItems } from '../../constants/NavItems.constants';
+import ProductSearchInput from '../../components/products/ProductSearchInput';
 
 import styles from './styles/Header.module.scss'
 
@@ -22,29 +23,29 @@ function Header() {
 
     return (
         <AppBar position="static" className={styles.websiteHeaderContainer} elevation={0}>
-            <Toolbar>
-                <Hidden smUp>
+            <Hidden smUp>
+                <div className={styles.mobileContainer}>
                     <IconButton edge="start" color="primary" aria-label="menu" onClick={toggleCollapsed}>
                         <MenuIcon />
                     </IconButton>
+                    <img src={"../images/shopping-bag.png"} className={styles.headerLogo} />
+                    <Link href="/" variant="body2" className={styles.navLink}>
+                        <Typography variant="h6" color="primary">
+                            {language.app_name}
+                        </Typography>
+                    </Link>
+                </div>
+            </Hidden>
+            <Toolbar>
+                <Hidden xsDown>
+                    <img src={"../images/shopping-bag.png"} className={styles.headerLogo} />
+                    <Link href="/" variant="body2" className={styles.navLink}>
+                        <Typography variant="h6" color="primary">
+                            {language.app_name}
+                        </Typography>
+                    </Link>
                 </Hidden>
-                <img src={"../images/shopping-bag.png"} className={styles.headerLogo} />
-                <Link href="/" variant="body2" className={styles.navLink}>
-                    <Typography variant="h6" color="primary">
-                        {language.app_name}
-                    </Typography>
-                </Link>
-                {/* <Hidden xsDown>
-                    {
-                        navItems.map((obj, i) => (
-                            <Link href={obj.path} variant="body2" className={styles.navLink} key={i}>
-                                <Button color="primary">
-                                    {obj.name}
-                                </Button>
-                            </Link>
-                        ))
-                    }
-                </Hidden> */}
+                <ProductSearchInput />
                 <Hidden smUp>
                     <Drawer open={collapsed} onClose={toggleCollapsed}>
                         <div className={styles.headerDrawerContainer}>
@@ -84,11 +85,13 @@ function Header() {
                         </div>
                     </Drawer>
                 </Hidden>
-                <Link href="/login" variant="body2">
-                    <Button color="primary">
-                        <AccountCircleIcon />
-                    </Button>
-                </Link>
+                <Hidden xsDown>
+                    <Link href="/login" variant="body2">
+                        <Button color="primary">
+                            <AccountCircleIcon />
+                        </Button>
+                    </Link>
+                </Hidden>
             </Toolbar>
         </AppBar>
     )

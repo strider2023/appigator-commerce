@@ -1,0 +1,28 @@
+.productsListContainer {
+    margin: 20px 10px 15px 10px;
+
+    .product {
+        display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 10px;
+
+        .productImage {
+            height: 180px;
+            padding: 10px;
+        }
+
+        .productDecriptionContainer {
+            padding: 10px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .productViewButton {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+

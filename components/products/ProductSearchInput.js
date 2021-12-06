@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { useRouter } from 'next/router';
 import { List, ListItem, ListItemText, IconButton, Paper, InputBase, Popover, Divider, Typography } from '@material-ui/core';
 import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
 
-import styles from './styles/ProductSearch.module.scss';
+import styles from './styles/ProductSearchInput.module.scss';
 
-function ProductSearch() {
+function ProductSearchInput(props) {
+    const router = useRouter();
     const [anchorEl, setAnchorEl] = React.useState(null);
     const [searchText, setSearchText] = useState('');
     const [searchResults, setSearchResults] = useState([]);
@@ -32,9 +34,14 @@ function ProductSearch() {
         setAnchorEl(null);
     };
 
+    const onSearchItemSelect = () => {
+        router.push('/product/search?search=test');
+    }
+
     return (
         <>
             <Paper component="form" className={styles.searchInputContainer}>
+                {props.children}
                 <InputBase
                     aria-describedby={id}
                     onChange={handleChange}
@@ -53,7 +60,7 @@ function ProductSearch() {
                 <List className={styles.suggestionsList}>
                     {searchResults.map((item, index) => (
                         <>
-                            <ListItem key={index} className={styles.suggestionsListItem}>
+                            <ListItem key={index} className={styles.suggestionsListItem} onClick={onSearchItemSelect}>
                                 <ListItemText primary={item.description} secondary={item.category} />
                             </ListItem>
                             {index < (searchResults.length - 1) && <Divider className={styles.suggestionsListItem} />}
@@ -65,4 +72,4 @@ function ProductSearch() {
     )
 }
 
-export default ProductSearch
+export default ProductSearchInput

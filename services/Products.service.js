@@ -22,5 +22,17 @@ export const itemData = [
         title: 'Image 4',
         price: 'price 4',
         seller: 'seller 1',
+    },
+    {
+        img: '../images/shopping.png',
+        title: 'Image 5',
+        price: 'price 5',
+        seller: 'seller 5',
+    },
+    {
+        img: '../images/shopping.png',
+        title: 'Image 6',
+        price: 'price 6',
+        seller: 'seller 7',
     }
 ];

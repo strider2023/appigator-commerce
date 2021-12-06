@@ -67,3 +67,10 @@
         font-family: "Pacifico", cursive !important;
     }
 }
+
+.mobileContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    align-items: center;
+}
