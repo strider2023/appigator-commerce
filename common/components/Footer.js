@@ -28,18 +28,6 @@ function Footer() {
                         </Grid>
                     ))
                 }
-                {/* <Grid item xs={12} sm={6}>
-                    <Button fullWidth>Policy</Button>
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                    <Button fullWidth>Terms and Conditions</Button>
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                    <Button fullWidth>About Us</Button>
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                    <Button fullWidth>Contact Us</Button>
-                </Grid> */}
             </Grid>
             <Typography variant="body2" color="textSecondary" align="center" className={styles.footerTextHolder}>
                 {language.copyright_footer}

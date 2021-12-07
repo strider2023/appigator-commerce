@@ -13,7 +13,7 @@ function Policy() {
                 <title>Surplusss</title>
                 <meta name="description" content="Surplusss policy page" />
             </Head>
-            <Header />
+            <Header displaySearch={false}/>
             <Container className={styles.policyTextContainer} maxWidth="lg">
                 <Typography variant="h4">
                     Terms and Conditions

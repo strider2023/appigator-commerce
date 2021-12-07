@@ -4,14 +4,14 @@ import { Hidden } from '@material-ui/core';
 import Header from '../common/components/Header';
 import Footer from '../common/components/Footer';
 
-function Contact() {
+function Profile() {
     return (
         <>
             <Head>
                 <title>Surplusss</title>
-                <meta name="description" content="Surplusss contact us page" />
+                <meta name="description" content="Surplusss profile page" />
             </Head>
-            <Header displaySearch={false}/>
+            <Header displaySearch={false} />
             <Hidden xsDown>
                 <Footer />
             </Hidden>
@@ -19,4 +19,4 @@ function Contact() {
     )
 }
 
-export default Contact
+export default Profile

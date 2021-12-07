@@ -14,7 +14,7 @@ function About() {
                 <title>Surplusss</title>
                 <meta name="description" content="Surplusss about page" />
             </Head>
-            <Header />
+            <Header displaySearch={false}/>
             <WebsiteHeader />
             <HowItWorks />
             <Hidden xsDown>

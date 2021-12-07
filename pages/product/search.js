@@ -29,7 +29,7 @@ function Search() {
                 <title>Surplusss</title>
                 <meta name="description" content="Surplusss search page" />
             </Head>
-            <Header />
+            <Header displaySearch={true}/>
             <Hidden xsDown>
                 <Fab variant="extended" onClick={handleClickOpen} color="primary" className={styles.filterButton}>
                     <FilterListRoundedIcon />

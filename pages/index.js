@@ -15,8 +15,13 @@ function Products() {
                 <title>Surplusss</title>
                 <meta name="description" content="Surplusss home page" />
             </Head>
-            <Header />
-            <ProductsGrid />
+            <Header displaySearch={true} />
+            <div className={styles.homeCategoriesContainer}>
+                <ProductsGrid />
+                <ProductsGrid />
+                <ProductsGrid />
+                <ProductsGrid />
+            </div>
             <Hidden xsDown>
                 <Footer />
             </Hidden>

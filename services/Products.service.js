@@ -36,3 +36,25 @@ export const itemData = [
         seller: 'seller 7',
     }
 ];
+
+export const sectionData = {
+    sectionName: 'Section Name Here',
+    previewItems: [
+        {
+            img: '../images/shopping.png',
+            title: 'Image 1',
+        },
+        {
+            img: '../images/shopping.png',
+            title: 'Image 2',
+        },
+        {
+            img: '../images/shopping.png',
+            title: 'Image 3',
+        },
+        {
+            img: '../images/shopping.png',
+            title: 'Image 4',
+        }
+    ]
+}

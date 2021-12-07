@@ -1,13 +1,22 @@
 import React from 'react';
-import { Typography, Button, Container } from '@material-ui/core';
+import { useRouter } from 'next/router';
+import { Typography, Divider, Container, Fab } from '@material-ui/core';
 import { itemData } from '../../services/Products.service';
+import VisibilityIcon from '@material-ui/icons/Visibility';
+import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 
 import styles from './styles/ProductList.module.scss';
 
 function ProductList() {
+    const router = useRouter();
+
+    const onViewItemSelect = () => {
+        router.push('/product/123');
+    }
+
     return (
         <Container className={styles.productsListContainer} maxWidth={'lg'}>
-            {itemData.map((item, index) => (
+            {itemData.length > 0 && itemData.map((item, index) => (
                 <div className={styles.product} key={index}>
                     <img src={item.img} alt={item.title} className={styles.productImage} />
                     <div className={styles.productDecriptionContainer}>
@@ -20,10 +29,29 @@ function ProductList() {
                         <Typography variant="subtitle2">
                             {item.seller}
                         </Typography>
-                        <Button fullWidth variant="outlined" className={styles.productViewButton} color="primary">View</Button>
+                        <div className={styles.productButtonContainer}>
+                            <Fab variant="extended" color="primary" className={styles.productButton} onClick={onViewItemSelect} size="medium">
+                                <VisibilityIcon />
+                                View
+                            </Fab>
+                            <Fab variant="extended" color="secondary" className={styles.productButton} size="medium">
+                                <AddShoppingCartIcon />
+                                Add to Cart
+                            </Fab>
+                        </div>
+                        {index < (itemData.length - 1) && <Divider />}
                     </div>
                 </div>
             ))}
+            {
+                itemData.length === 0 &&
+                <div className={styles.emptySearchContainer}>
+                    <img src={"../images/search.png"} alt={'no data found'} className={styles.emptyImage} />
+                    <Typography variant="h4">
+                        No Data Found
+                    </Typography>
+                </div>
+            }
         </Container>
     )
 }
