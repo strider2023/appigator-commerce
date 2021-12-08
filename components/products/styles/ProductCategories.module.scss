@@ -1,0 +1,31 @@
+.productCategoriesContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px 10px 20px;
+    overflow-y: hidden;
+    background: #ececec;
+
+    .productCategoryItem {
+        display: flex;
+        flex-direction: column;
+        margin: 5px 10px 5px 10px;
+        width: 60px;
+        align-items: center;
+
+        .avatarImage {
+            width: 40px;
+            // background: #fefefe;
+        }
+
+        .avatarText {
+            background: chocolate;
+        }
+        
+        p {
+            text-align: center;
+            font-size: 8pt;
+        }
+    }
+}

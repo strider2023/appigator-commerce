@@ -6,6 +6,8 @@ import Footer from '../common/components/Footer';
 import ProductsGrid from '../components/products/ProductsGrid';
 
 import styles from '../styles/Home.module.scss';
+import ProductsCarousel from '../components/products/ProductsCarousel';
+import ProductCategories from '../components/products/ProductCategories';
 
 function Products() {
 
@@ -16,6 +18,8 @@ function Products() {
                 <meta name="description" content="Surplusss home page" />
             </Head>
             <Header displaySearch={true} />
+            <ProductCategories />
+            <ProductsCarousel />
             <div className={styles.homeCategoriesContainer}>
                 <ProductsGrid />
                 <ProductsGrid />

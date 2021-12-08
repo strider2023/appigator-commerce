@@ -58,3 +58,53 @@ export const sectionData = {
         }
     ]
 }
+
+export const carouselItems = [
+    {
+        name: "Random Name #1",
+        description: "Probably the most random thing you have ever seen!"
+    },
+    {
+        name: "Random Name #2",
+        description: "Hello World!"
+    }
+]
+
+export const categories = [
+    {
+        name: "Clothes & Fabric",
+        img: "../images/fabric.svg"
+    },
+    {
+        name: "Fitness",
+        img: "../images/fitness.png"
+    },
+    {
+        name: "Health",
+        img: "../images/health.png"
+    },
+    {
+        name: "Electronics",
+        img: "../images/electronics.png"
+    },
+    {
+        name: "Music",
+        img: "../images/music.png"
+    },
+    {
+        name: "Home Appliances",
+        img: "../images/home_appliances.png"
+    },
+    {
+        name: "Stationery",
+        img: "../images/stationery.png"
+    },
+    {
+        name: "Hardware",
+        img: "../images/settings.png"
+    },
+    {
+        name: "Category 8",
+        img: ""
+    }
+]
