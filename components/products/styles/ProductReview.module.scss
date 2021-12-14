@@ -1,0 +1,72 @@
+.productReviewContianer {
+    margin: 20px 0px 20px 0px;
+
+    .productRatings {
+        display: flex;
+        flex-direction: row;
+        margin: 10px 0px 10px 0px;
+
+        .productRatingContainer {
+            text-align: center;
+            max-width: 150px;
+
+            .productRating {
+                font-size: 2rem;
+            }
+
+            .productRatingsCount {
+                color: gray;
+            }
+        }
+
+        .productRatingBarContainer {
+            width: 50%;
+            flex-grow: 1;
+            margin: 0px 0px 0px 20px;
+            align-items: center;
+
+            .ratingItem {
+                margin: 2px 0px 2px 0px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 30%;
+                height: 30px;
+
+                .productRating {
+                    font-size: 1rem;
+                }
+
+                .productRatingBar {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .productReviewsListContainer {
+        margin: 20px 0px 20px 0px;
+
+        .reviewItem {
+            margin: 10px 0px 5px 0px;
+
+            .reviewItemHeader {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .productReviewContianer {
+        .productRatings {
+            .productRatingBarContainer {
+                .ratingItem {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

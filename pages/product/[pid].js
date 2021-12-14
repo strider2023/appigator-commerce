@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Header from '../../common/components/Header';
 import Footer from '../../common/components/Footer';
+import ProductDetailsContainer from '../../containers/ProductDetailsContainer';
 import { Hidden } from '@material-ui/core';
 
 function ProductDetails() {
@@ -16,7 +17,7 @@ function ProductDetails() {
                 <meta name="description" content="Surplusss product description page" />
             </Head>
             <Header displaySearch={true}/>
-            {pid}
+            <ProductDetailsContainer productId={pid}/>
             <Hidden xsDown>
                 <Footer />
             </Hidden>

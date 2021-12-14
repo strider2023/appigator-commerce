@@ -61,12 +61,16 @@ export const sectionData = {
 
 export const carouselItems = [
     {
+        img: "../images/fabric.svg",
         name: "Random Name #1",
-        description: "Probably the most random thing you have ever seen!"
+        description: "Probably the most random thing you have ever seen!",
+        link: ""
     },
     {
+        img: "../images/fabric.svg",
         name: "Random Name #2",
-        description: "Hello World!"
+        description: "Hello World!",
+        link: ""
     }
 ]
 
