@@ -1,9 +1,9 @@
-import ForumIcon from '@material-ui/icons/Forum';
-import LocalMallIcon from '@material-ui/icons/LocalMall';
-import ApartmentIcon from '@material-ui/icons/Apartment';
-import BookIcon from '@material-ui/icons/Book';
-import ShoppingCartRoundedIcon from '@material-ui/icons/ShoppingCartRounded';
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import ForumIcon from '@mui/icons-material/Forum';
+import LocalMallIcon from '@mui/icons-material/LocalMall';
+import ApartmentIcon from '@mui/icons-material/Apartment';
+import BookIcon from '@mui/icons-material/Book';
+import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 export const navItems = [
     {

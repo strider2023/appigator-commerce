@@ -1,6 +1,6 @@
 import React from 'react';
-import { Chip, Divider, LinearProgress, Typography } from '@material-ui/core';
-import StarRoundedIcon from '@material-ui/icons/StarRounded';
+import { Chip, Divider, LinearProgress, Typography } from '@mui/material';
+import StarRoundedIcon from '@mui/icons-material/StarRounded';
 
 import styles from './styles/ProductReview.module.scss';
 

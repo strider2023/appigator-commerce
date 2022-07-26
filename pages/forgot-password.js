@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { LanguageContext } from '../common/providers/LanguageContext';
 import Head from 'next/head';
-import { Container, Hidden, TextField, Grid, Button } from '@material-ui/core';
+import { Container, Hidden, TextField, Grid, Button } from '@mui/material';
 import Link from 'next/link';
 import Notiflix from "notiflix";
 import { useMutation, gql } from '@apollo/client';

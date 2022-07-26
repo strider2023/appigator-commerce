@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Hidden, Typography, Button, Container, Divider } from '@material-ui/core';
+import { Grid, Hidden, Typography, Button, Container, Divider } from '@mui/material';
 import { sectionData } from '../../services/Products.service';
 
 import styles from './styles/ProductsGrid.module.scss';

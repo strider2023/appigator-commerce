@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import Link from 'next/link';
 import { LanguageContext } from '../providers/LanguageContext';
-import { Button, Grid, Typography } from '@material-ui/core';
+import { Button, Grid, Typography } from '@mui/material';
 import { navItems } from '../../constants/NavItems.constants';
 
 import styles from './styles/Footer.module.scss'

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button, Fade } from '@material-ui/core';
+import { Button, Fade } from '@mui/material';
 import { carouselItems } from '../../services/Products.service';
 
 import styles from './styles/ProductsCarousel.module.scss';

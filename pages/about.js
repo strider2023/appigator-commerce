@@ -5,7 +5,7 @@ import WebsiteHeader from '../components/about/WebsiteHeader';
 import HowItWorks from '../components/about/HowItWorks';
 
 import styles from '../styles/About.module.scss';
-import { Hidden } from '@material-ui/core';
+import { Hidden } from '@mui/material';
 
 function About() {
     return (

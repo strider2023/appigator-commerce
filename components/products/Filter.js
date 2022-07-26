@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button, Dialog, AppBar, Toolbar, IconButton, Typography, Slide, Grid } from '@material-ui/core';
-import CloseIcon from '@material-ui/icons/Close';
+import { Button, Dialog, AppBar, Toolbar, IconButton, Typography, Slide, Grid } from '@mui/material';
+import CloseIcon from '@mui/icons-material/Close';
 
 import styles from './styles/Filter.module.scss';
 

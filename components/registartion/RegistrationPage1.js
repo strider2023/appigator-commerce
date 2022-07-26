@@ -1,8 +1,8 @@
 import React, { useState, useContext } from 'react';
 import { LanguageContext } from '../../common/providers/LanguageContext';
-import { FormControl, InputLabel, OutlinedInput, InputAdornment, IconButton, Grid, TextField, Select, MenuItem } from "@material-ui/core";
-import Visibility from '@material-ui/icons/Visibility';
-import VisibilityOff from '@material-ui/icons/VisibilityOff';
+import { FormControl, InputLabel, OutlinedInput, InputAdornment, IconButton, Grid, TextField, Select, MenuItem } from '@mui/material';
+import Visibility from '@mui/icons-material/Visibility';
+import VisibilityOff from '@mui/icons-material/VisibilityOff';
 
 function RegistrationPage1(props) {
     const language = useContext(LanguageContext);

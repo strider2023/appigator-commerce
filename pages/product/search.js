@@ -1,12 +1,12 @@
 import React from 'react';
 import { useRouter } from 'next/router'
-import { Fab, Hidden, Typography } from '@material-ui/core';
+import { Fab, Hidden, Typography } from '@mui/material';
 import Head from 'next/head';
 import Header from '../../common/components/Header';
 import Footer from '../../common/components/Footer';
 import ProductList from '../../components/products/ProductList';
 import Filter from '../../components/products/Filter';
-import FilterListRoundedIcon from '@material-ui/icons/FilterListRounded';
+import FilterListRoundedIcon from '@mui/icons-material/FilterListRounded';
 
 import styles from '../../styles/Search.module.scss';
 

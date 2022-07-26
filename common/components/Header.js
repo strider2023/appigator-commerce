@@ -1,12 +1,12 @@
 import React, { useState, useContext } from 'react';
 import { LanguageContext } from '../providers/LanguageContext';
-import Cookies from 'universal-cookie';
+import cookieCutter from 'cookie-cutter';
 import Link from 'next/link';
-import { AppBar, Toolbar, Typography, IconButton, Drawer, List, ListItem, ListItemText, Button, Hidden, ListItemIcon, Avatar } from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
-import PersonIcon from '@material-ui/icons/Person';
-import ShoppingCartRoundedIcon from '@material-ui/icons/ShoppingCartRounded';
+import { AppBar, Toolbar, Typography, IconButton, Drawer, List, ListItem, ListItemText, Button, Hidden, ListItemIcon, Avatar } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import PersonIcon from '@mui/icons-material/Person';
+import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded';
 import { navItems } from '../../constants/NavItems.constants';
 import ProductSearchInput from '../../components/products/ProductSearchInput';
 
@@ -14,7 +14,6 @@ import styles from './styles/Header.module.scss'
 
 function Header(props) {
     const language = useContext(LanguageContext);
-    const cookies = new Cookies();
     const [collapsed, setCollapsed] = useState(false);
 
     const toggleCollapsed = (e) => {
@@ -38,21 +37,21 @@ function Header(props) {
                 {props.displaySearch && <div className={styles.mobileSearchBar}><ProductSearchInput /></div>}
                 <Drawer open={collapsed} onClose={toggleCollapsed}>
                     <div className={styles.headerDrawerContainer}>
-                        {
-                            cookies.get('firstName') ? (
+                        {/* {
+                            cookieCutter.get('firstName') ? (
                                 <>
-                                    <Avatar className={styles.headerDrawerProfileAvatar}>{`${cookies.get('firstName').charAt(0)}${cookies.get('lastName').charAt(0)}`}</Avatar>
+                                    <Avatar className={styles.headerDrawerProfileAvatar}>{`${cookieCutter.get('firstName').charAt(0)}${cookieCutter.get('lastName').charAt(0)}`}</Avatar>
                                     <Typography variant="h5" className={styles.headerDrawerProfileName}>
-                                        {`${cookies.get('firstName')} ${cookies.get('lastName')}`}
+                                        {`${cookieCutter.get('firstName')} ${cookieCutter.get('lastName')}`}
                                     </Typography>
                                 </>
-                            ) : (
+                            ) : ( */}
                                 <>
                                     <Avatar className={styles.headerDrawerProfileAvatar}><PersonIcon /></Avatar>
                                     <Button href="/login" className={styles.headerDrawerLoginBtn}>Login</Button>
                                 </>
-                            )
-                        }
+                            {/* )
+                        } */}
                     </div>
                     <List className={styles.drawerList}>
                         {

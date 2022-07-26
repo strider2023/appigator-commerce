@@ -1,15 +1,14 @@
 import React, { useState, useContext } from 'react';
 import { LanguageContext } from '../common/providers/LanguageContext';
 import Head from 'next/head';
-import { FormControl, InputLabel, OutlinedInput, InputAdornment, IconButton, Grid, TextField, Container, Button, Hidden } from "@material-ui/core";
+import { FormControl, InputLabel, OutlinedInput, InputAdornment, IconButton, Grid, TextField, Container, Button, Hidden } from '@mui/material';
 import Link from 'next/link';
 // import { useHistory } from "react-router-dom";
-import Cookies from 'universal-cookie';
 import Notiflix from "notiflix";
 import { useMutation, gql } from '@apollo/client';
 // import useAuthState from '../common/hooks/useAuthState';
-import Visibility from '@material-ui/icons/Visibility';
-import VisibilityOff from '@material-ui/icons/VisibilityOff';
+import Visibility from '@mui/icons-material/Visibility';
+import VisibilityOff from '@mui/icons-material/VisibilityOff';
 
 import styles from "../styles/Login.module.scss";
 
@@ -33,7 +32,6 @@ const AUTHENTICATE = gql`
 
 function Login() {
     const language = useContext(LanguageContext);
-    const cookies = new Cookies();
     // const history = useHistory();
     // const { addAuth } = useAuthState();
     const [values, setValues] = useState({

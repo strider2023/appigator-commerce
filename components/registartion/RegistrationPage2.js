@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { LanguageContext } from '../../common/providers/LanguageContext';
-import { Grid, TextField } from "@material-ui/core";
+import { Grid, TextField } from '@mui/material';
 
 function RegistrationPage2(props) {
     const language = useContext(LanguageContext);

@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import { Hidden } from '@material-ui/core';
+import { Hidden } from '@mui/material';
 import Header from '../common/components/Header';
 import Footer from '../common/components/Footer';
 

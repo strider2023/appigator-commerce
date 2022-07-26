@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Grid, Link } from '@material-ui/core';
+import { Button, Grid, Link } from '@mui/material';
 
 import styles from './styles/WebsiteHeader.module.scss'
 

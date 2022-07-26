@@ -1,9 +1,9 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-import { Typography, Divider, Container, Fab } from '@material-ui/core';
+import { Typography, Divider, Container, Fab } from '@mui/material';
 import { itemData } from '../../services/Products.service';
-import VisibilityIcon from '@material-ui/icons/Visibility';
-import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 import styles from './styles/ProductList.module.scss';
 

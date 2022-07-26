@@ -1,6 +1,6 @@
 import '../styles/globals.scss';
 import React from 'react';
-import { ThemeProvider } from '@material-ui/core/styles';
+import { ThemeProvider } from '@mui/material';
 import { APP_THEME } from '../constants/AppTheme.constants';
 import { LanguageContext } from '../common/providers/LanguageContext';
 import { useRouter } from 'next/router';

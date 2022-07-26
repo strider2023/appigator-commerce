@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import Head from 'next/head';
-import { Container, Button, Grid, Stepper, Step, StepLabel } from '@material-ui/core';
+import { Container, Button, Grid, Stepper, Step, StepLabel } from '@mui/material';
 import Link from 'next/link';
 import Notiflix from "notiflix";
 import { useMutation, gql } from '@apollo/client';

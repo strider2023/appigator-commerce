@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
-import { List, ListItem, ListItemText, IconButton, Paper, InputBase, Popover, Divider, Typography } from '@material-ui/core';
-import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
+import { List, ListItem, ListItemText, IconButton, Paper, InputBase, Popover, Divider, Typography } from '@mui/material';
+import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 
 import styles from './styles/ProductSearchInput.module.scss';
 

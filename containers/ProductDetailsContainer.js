@@ -1,4 +1,4 @@
-import { Container } from '@material-ui/core';
+import { Container } from '@mui/material';
 import React from 'react';
 import ProductGallery from '../components/products/ProductGallery';
 import ProductDescription from '../components/products/ProductDescription';
